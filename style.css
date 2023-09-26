@@ -1,64 +1,72 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header .logo img {
-    height: 40px;
-}
-
-header .search input {
-    width: 200px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-header .menu-icons img {
-    height: 25px;
-    margin-left: 20px;
-}
-
-main {
+body{
+    background:white;
+  }
+  h1{
+    text-align: center;
+  }
+  p{
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .flex-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
-}
-
-/* Estilos de publicaciones */
-.post {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.post img {
-    max-width: 100%;
-}
-
-.post h3 {
-    margin: 10px 0;
-}
-
-.likes {
-    font-weight: bold;
+    padding: 20px;
+  }
+  .photo {
+    
+    width: calc(33.33% - 20px);
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  .post-header{
     margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+   
 }
 
-.caption {
-    color: #333;
+  .photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .photo:hover {
+    transform: scale(1.03);
+  }
+  .post-actions {
+    display: flex;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+.post-description {
+    padding: 12px;
+}
+
+.post-description p {
+    margin: 0;
+}
+.post-icons{
+    margin-top: 5px;
+
+}
+#html5{
+    display:flex;
+    padding: 10px 10px 10px 10px;
+    height: 30px;
+    width: 30px;
+}
+i{
+  margin: 8px;
+  
+
+}
+.texto{
+  font-size: small;
 }
